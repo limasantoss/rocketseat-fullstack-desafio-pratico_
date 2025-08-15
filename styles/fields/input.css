@@ -1,0 +1,70 @@
+label {
+  display: block;
+  margin-top: 1.5rem;
+  font: var(--text-content-sm);
+}
+
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  padding: 1rem;
+  font: var(--text-content-md);
+  margin-top: 0.75rem;
+  color: var(--text-heading);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input[type="date"]:focus-within {
+  outline: 1px solid var(--brand-light);
+  border-color: var(--brand-light);
+  outline-offset: 0.1px;
+}
+
+input {
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font: var(--text-content-xs);
+    color: var(--danger);
+    margin-top: 0.5rem;
+
+    & img {
+      width: 1rem;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
+
+.flex {
+  gap: 1rem;
+  align-items: center;
+
+  & .input-wrapper {
+    width: 48%;
+  }
+
+  & .input-wrapper.flex-2 {
+    width: 25%;
+  }
+}

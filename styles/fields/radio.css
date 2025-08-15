@@ -1,0 +1,192 @@
+
+label + .radio-wrapper,
+label + .colors-wrapper,
+label + .theme-wrapper {
+  margin-top: 0.75rem;
+}
+
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem;
+  background-color: var(--input-base);
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 2px;
+}
+
+.radio-inner {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+
+  .building-icon {
+    background-image: url(../../assets/icons/building-2.svg);
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .video-icon {
+    background-image: url(../../assets/icons/video.svg);
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  & > label {
+    margin-top: 0;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  &:has(:checked) {
+    color: var(--text-heading);
+    font: var(--text-heading-sm);
+    background-color: var(--shape-button);
+
+    & .building-icon {
+      background-image: url(../../assets/icons/building-checked.svg);
+    }
+
+    & .video-icon {
+      background-image: url(../../assets/icons/video-checked.svg);
+    }
+  }
+}
+
+.colors-wrapper {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 0.75rem;
+
+  .radio-color {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 999px;
+    border: 6px solid var(--shape-button);
+    position: relative;
+    cursor: pointer;
+
+    &.blue {
+      background-color: var(--brand-light);
+    }
+
+    &.navy {
+      background-color: var(--navy);
+    }
+
+    &.purple {
+      background-color: var(--purple);
+    }
+
+    &.fuschia {
+      background-color: var(--fuschia);
+    }
+
+    &.pink {
+      background-color: var(--pink);
+    }
+
+    &.red {
+      background-color: var(--danger);
+    }
+
+    &.orange {
+      background-color: var(--orange);
+    }
+
+    &.yellow {
+      background-color: var(--yellow);
+    }
+
+    &.lime {
+      background-color: var(--lime);
+    }
+
+    &.green {
+      background-color: var(--green);
+    }
+
+    &.cyan {
+      background-color: var(--cyan);
+    }
+
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:hover {
+      border-color: var(--shape-hover);
+    }
+
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+}
+
+.theme-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+
+  .theme-radio {
+    background-color: var(--shape-button);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    position: relative;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 5rem;
+      object-fit: cover;
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+    }
+
+    label {
+      margin-top: 0;
+      padding-bottom: 0.5rem;
+    }
+
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+}

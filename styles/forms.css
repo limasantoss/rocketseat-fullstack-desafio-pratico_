@@ -1,0 +1,44 @@
+
+@import url(fields/index.css);
+
+form {
+  margin-top: 2.5rem;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & img {
+    width: 24px;
+    aspect-ratio: 1/1;
+  }
+
+  & span {
+    font: var(--text-heading-sm);
+    color: var(--text-heading);
+  }
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
+
+.separator {
+  border: 1px solid var(--input-stroke);
+  height: 1px;
+  margin-block: 3rem 2.5rem;
+}
+
+.actions-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}

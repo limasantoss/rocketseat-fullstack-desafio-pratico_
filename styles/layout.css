@@ -1,0 +1,52 @@
+
+#app {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  height: 100vh;
+  overflow: hidden;
+  padding: 2rem;
+  gap: 1.25rem;
+}
+
+aside {
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  border-radius: 0.75rem;
+  padding: 2rem;
+
+  & .aside-container {
+    max-width: 25rem;
+    margin-right: auto;
+  }
+
+  & img {
+    width: 45px;
+  }
+
+  & h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font: var(--text-logo);
+    color: var(--pink);
+  }
+
+  & p {
+    color: var(--text-heading);
+  }
+}
+
+main {
+  overflow: auto;
+  padding: 5rem 8.125rem;
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+
+  & .main-container {
+    max-width: 51.25rem;
+  }
+
+  & h2 {
+    font: var(--text-heading-md);
+    color: var(--text-heading);
+  }
+}
