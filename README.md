@@ -21,10 +21,5 @@ Tendo como foco, o estudo e aplicação das <forms>, é um desafio prático para
 
 <h1> 🌐 Como visualizar o Projeto? </h1> 
 
- Na seção sobre (about) do projeto, via GitHub, você pode visualizar o link que te leva direto para o site! 
-<br>
- Ou se preferir você clicar <a href="https://joao-oliveira-dev.github.io/Formulario-de-Convite/">Aqui!</a>
-
- E aqui se encontra o link por extenso: https://joao-oliveira-dev.github.io/Formulario-de-Convite/
 
 <br>
