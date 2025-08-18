@@ -3,12 +3,12 @@
 
 Tendo como foco, o estudo e aplicação das <forms>, é um desafio prático para colocar a teste todos os conhecimentos adquiridos durante o curso de fullstack, conhecimentos e progressão de avanço na área.
 
-<br>
+<br/>
 
 ![image](https://github.com/user-attachments/assets/434e10b7-27c9-4462-9b50-45ce531c16c6)
 
 
-<br>
+<br/>
 
 <h1> 🛠️ Tecnologias usadas </h1>
 
@@ -17,7 +17,7 @@ Tendo como foco, o estudo e aplicação das <forms>, é um desafio prático para
   <li> CSS - Estilização e parte visual (O design) </li>
 </ul>
 
-<br>
+<br/>
 
 <h1> 🌐 Como visualizar o Projeto? </h1> 
 
